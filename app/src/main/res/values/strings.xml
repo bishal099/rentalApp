@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Auto Fleet</string>
+    <string name="car_store">Car Bazar</string>
+    <string name="auto_fleet">AutoFLeet</string>
+
+
+    <string-array name="sort_options">
+        <item>Name</item>
+        <item>Price</item>
+    </string-array>
+</resources>

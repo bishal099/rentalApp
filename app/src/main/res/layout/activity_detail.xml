@@ -1,0 +1,100 @@
+<!-- activity_detail.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/background_light">
+
+    <ImageView
+        android:id="@+id/detailImageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="CarDealer"
+        android:src="@drawable/car1"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/detailNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:text="Car Model Name"
+        android:layout_below="@id/detailImageView"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/detailPriceTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Price: $50,000"
+        android:layout_below="@id/detailNameTextView"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/darker_gray"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/detailPriceTextView"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"/>
+
+    <!-- Car Body Type -->
+    <TextView
+        android:id="@+id/detailBodyTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailPriceTextView"
+        android:layout_marginTop="16dp"
+        android:text="Body Type: Sedan"
+        android:padding="16dp"/>
+
+    <!-- Car Engine Type -->
+    <TextView
+        android:id="@+id/detailEngineTypeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailBodyTypeTextView"
+        android:padding="16dp"
+        android:text="Engine Type: V6"/>
+
+    <!-- Car Engine CC -->
+    <TextView
+        android:id="@+id/detailEngineCCTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailEngineTypeTextView"
+        android:padding="16dp"
+        android:text="Engine CC: 3000"/>
+
+    <!-- Car Kilometers Run -->
+    <TextView
+        android:id="@+id/detailKmRunTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailEngineCCTextView"
+        android:padding="16dp"
+        android:text="Kilometers Run: 50,000"/>
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/detailKmRunTextView"
+        android:layout_marginTop="16dp"
+        android:background="?android:attr/listDivider"/>
+
+    <!-- Buy Now Button -->
+    <Button
+        android:id="@+id/buyNowButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buy Now"
+        android:layout_below="@id/detailKmRunTextView"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:onClick="onBuyNowClick"/>
+</RelativeLayout>
